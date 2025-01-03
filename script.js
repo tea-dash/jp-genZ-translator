@@ -12,7 +12,7 @@ async function translateToGenZ() {
     translateBtn.textContent = 'Translating...';
 
     try {
-        const response = await fetch('http://localhost:3000/translate', {
+        const response = await fetch('https://jp-gen-z-translator-git-main-tadashi-kumazawas-projects.vercel.app/api/translate', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
