@@ -1,26 +1,23 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gen Z Japanese Translator</title>
+    <title>Japanese Gen Z Translator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Gen Z Japanese Translator</h1>
-        <div class="translator">
-            <div class="input-section">
-                <label for="input-text">Standard Japanese:</label>
-                <textarea id="input-text" placeholder="Enter standard Japanese here..."></textarea>
-            </div>
-            <button id="translate-btn">Translate ➜</button>
-            <div class="output-section">
-                <label for="output-text">Gen Z Japanese:</label>
-                <textarea id="output-text" readonly placeholder="Translation will appear here..."></textarea>
-            </div>
+        <h1>Japanese Gen Z Translator</h1>
+        <div class="translation-box">
+            <input type="text" id="input" placeholder="Enter Japanese text...">
+            <!-- Add type="button" and make sure the ID matches -->
+            <button type="button" id="translateBtn">Translate</button>
+            <div id="output"></div>
         </div>
     </div>
-    <script src="script.js"></script>
+
+    <!-- Add defer attribute to ensure DOM loads first -->
+    <script src="script.js" defer></script>
 </body>
 </html> 
